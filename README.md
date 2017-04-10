@@ -40,7 +40,7 @@ This will install both run-time project dependencies and developer tools listed 
 $ yarn start
 ```
 
-This command will start a webpack development server listening to requests at: ```http://localhost:3000/```
+This command will start a webpack development server listening to requests at: ```http://localhost:4200/```
 
 ## Other tools
 
