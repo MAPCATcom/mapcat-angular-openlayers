@@ -1,0 +1,17 @@
+.mangol {
+  @include outer-container(100%);
+  height: $mangol-height !important;
+  & .ol-viewport {
+    height: $mangol-height !important;
+  }
+  & md-sidenav-container {
+    & md-sidenav {
+      width: 40%;
+    }
+    & .mat-sidenav-backdrop {
+      &.mat-sidenav-shown {
+        display: none !important;
+      }
+    }
+  }
+}

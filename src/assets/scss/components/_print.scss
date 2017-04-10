@@ -1,0 +1,6 @@
+.mangol-print {
+  & .mat-ripple-background,
+  & .mat-ripple-foreground {
+    display: none !important;
+  }
+}
