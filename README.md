@@ -1,8 +1,8 @@
 # -- Work in progress, not ready for use yet. --
 
-# Rendering MapCat maps from a React application with Leaflet
+# Rendering MapCat maps from an Angular 5 application with OpenLayers
 
-This is a sample project showing how to render a map in a React web application. It's using [Leaflet](http://leafletjs.com/) and [react-leaflet](https://github.com/PaulLeCam/react-leaflet) for rendering the tiles served by the MapCat API.
+This is a sample project showing how to render a map in an Angular 5 web application. It's using [OpenLayers](https://openlayers.org/) for rendering the tiles served by the MapCat API.
 
 The language of this project is TypeScript and it is built with Webpack and SCSS.
 
@@ -21,8 +21,8 @@ MapCat provides a couple of commercial services built on the OpenStreetMap datab
 For a quick start you can clone this repository:
 
 ```shell
-$ git clone -o mapcat-angular2-openlayers -b master --single-branch \
-      https://github.com/MapCat-Com/mapcat-angular2-openlayers.git MapCat-Sample
+$ git clone -o mapcat-angular-openlayers -b master --single-branch \
+      https://github.com/MAPCATcom/mapcat-angular-openlayers.git MapCat-Sample
 $ cd MapCat-Sample
 ```
 
@@ -36,9 +36,7 @@ This will install both run-time project dependencies and developer tools listed 
 
 ## Run in development mode
 
-```shell
-$ yarn start
-```
+```$ yarn start``` or ```$ npm start```
 
 This command will start a webpack development server listening to requests at: ```http://localhost:4200/```
 
@@ -46,15 +44,11 @@ This command will start a webpack development server listening to requests at: `
 
 For a production build run:
 
-```shell
-$ yarn run build
-```
+```$ yarn run build``` or ```$ npm run build```
 
-The compiled, optimized static files will be put into the `build` folder.
+The compiled, optimized static files will be put into the `dist` folder.
 
 For ESLint run:
 
-```shell
-$ yarn run lint
-```
+```$ yarn run lint``` or ```$ npm run lint```
 
