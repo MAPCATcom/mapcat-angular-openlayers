@@ -1,8 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
-import { MaterialModule } from '@angular/material';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LocationStrategy, HashLocationStrategy } from '@angular/common';
 import { MangolModule } from 'mangol';
 
@@ -13,10 +11,8 @@ import { AppComponent } from './app.component';
     AppComponent  ],
   imports: [
     BrowserModule,
-    FormsModule,
-    HttpModule,
-    MaterialModule.forRoot(),
-    MangolModule.forRoot()
+    BrowserAnimationsModule,
+    MangolModule
   ],
   providers: [
     { provide: Window, useValue: window },
