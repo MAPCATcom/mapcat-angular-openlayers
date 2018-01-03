@@ -18,7 +18,7 @@ export class AppComponent implements OnInit {
 
   private getViewUrl(): Promise<string> {
     return new Promise((resolve, reject) => {
-      mapview.initRasterView('NrP1WQLjuHTU220tHAbs3fzRdIg0nmhjMeL2pvwj', null, null, (error, response) => {
+      mapview.initRasterView('jM9oGlsfWxOOYYF0kvuq2UbYl3XrVuUzJmwfnB6M', null, null, (error, response) => {
         if (error) {
           reject(error);
         } else {
