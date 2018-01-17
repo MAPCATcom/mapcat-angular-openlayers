@@ -18,13 +18,13 @@ export class AppComponent implements OnInit {
 
   private getViewUrl(): Promise<string> {
     return new Promise((resolve, reject) => {
-      mapview.initRasterView('jM9oGlsfWxOOYYF0kvuq2UbYl3XrVuUzJmwfnB6M', null, null, (error, response) => {
+      mapview.initRasterView((error, response) => {
         if (error) {
           reject(error);
         } else {
           resolve(response);
         }
-      });
+      }, 'jM9oGlsfWxOOYYF0kvuq2UbYl3XrVuUzJmwfnB6M');
     });
   };
 
